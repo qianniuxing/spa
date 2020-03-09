@@ -1,0 +1,24 @@
+spring:
+  application:
+    #服务名称
+    name: member
+  profiles:
+    #启用环境
+    active: dev
+  cloud:
+    nacos:
+      discovery:
+        #注册中心连接地址
+        server-addr: 127.0.0.1:8848
+        #空间
+        namespace: 84417dd1-8f16-4987-865a-996bbdc48331
+      config:
+        #配置中心连接地址
+        server-addr: 127.0.0.1:8848
+        #空间
+        namespace: 84417dd1-8f16-4987-865a-996bbdc48331
+        #分组
+        group: DEFAULT_GROUP
+        #文件类型（文件后缀yaml、properties、xml等）
+        file-extension: yaml
+
